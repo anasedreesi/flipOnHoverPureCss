@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+/* examples & templates styles */
+.examples {
+	text-align: center;
+	background: #ff8416;
+	color: #fff;
+	position: relative;
+	z-index: 9;
+}
+.examples-holder {
+	width: 978px;
+	margin: 0 auto;
+	padding: 25px 0 42px;
+}
+.home .examples-holder { padding: 25px 0 0; }
+.examples h2 {
+	color: #fff;
+	margin: 0 0 41px;
+}
+.examples ul{
+	list-style: none;
+	padding: 0;
+	margin: 0 -8px 0 -7px;
+	position:relative;
+	outline:none;
+}
+.examples ul:after{
+	display:block;
+	clear:both;
+	content:'';
+}
+.examples ul li {
+	width: 331px;
+	height: 136px;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	z-index:1;
+	outline:0;
+	border:0;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+}
+.examples ul li.even .front { background: #fe5a0d; }
+.examples .front {
+	width: 291px;
+	height: 96px;
+	display: block;
+	padding: 20px;
+	border:0;
+	outline:none;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: all 1.0s linear;
+	-o-transform-style: preserve-3d;
+	-o-transition: all 1.0s linear;
+	-ms-transform-style: preserve-3d;
+	-ms-transition: all 1.0s linear;
+	-moz-transform-style: preserve-3d;
+	-moz-transition: all 1.0s linear;
+	transform-style: preserve-3d;
+	transition: all 1.0s linear;
+}
+.examples img {
+	display: block;
+	margin: 0 auto 5px;
+}
+.examples .title {
+	display: block;
+	font-size: 1.125em;
+	line-height: 1.222em;
+	text-transform: capitalize;
+}
+.face-holder {
+    display:block;
+    color:#fff;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: all 1.0s linear;
+	-o-transform-style: preserve-3d;
+	-o-transition: all 1.0s linear;
+	/*-ms-transform-style: preserve-3d;
+	-ms-transition: all 1.0s linear;*/
+	-moz-transform-style: preserve-3d;
+	-moz-transition: all 1.0s linear;
+	transform-style: preserve-3d;
+	transition: all 1.0s linear;
+    cursor:pointer;
+}
+
+.examples .back{
+    cursor:pointer;
+}
+
+.examples li:hover .face-holder {
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	/*-ms-transform: rotateY(180deg);*/
+	-webkit-transform: rotateY(180deg);
+	/*transform: rotateY(180deg);*/
+}
+.examples li:hover .face-holder{
+	/*-ms-perspective:100px;
+	-ms-transform: rotateY(180deg);*/
+}
+
+body.isie .examples-holder .back {
+    display:none;
+}
+
+body.isie .examples-holder .face-holder:hover .back {
+    display:block;
+}
+
+.face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border:0;
+	outline:0;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	/*-ms-backface-visibility: hidden;*/
+}
+.examples .back {
+	width: 331px;
+	height: 136px;
+	font-size: 0.785em;
+	line-height: 1.142em;
+	background: #324154;
+	outline:none;
+	-webkit-transform: rotateY(180deg);
+	-webkit-box-sizing: border-box;
+	-moz-transform: rotateY(180deg);
+	-moz-box-sizing: border-box;
+	-o-transform: rotateY(180deg);
+	-o-box-sizing: border-box;
+	/*-ms-transform: rotateY(180deg);
+	-ms-box-sizing: border-box;
+	transform: rotateY(180deg);*/
+	box-sizing: border-box;
+	padding: 20px 30px;
+}
+.examples .heading {
+	
+	display: block;
+	color: #ea6e0e;
+	text-transform: uppercase;
+}
+.examples .back p { margin: 0 0 10px; }
+/* our blog styles */
+
+</style>
+<body>
+  <div class="examples">
+    <div class="examples-holder">
+        <h2>Examples &amp; Templates:</h2>
+        <ul>
+            <li class="even">
+                <a href="/template-example/webdevelopment/" class="face-holder">
+                    <div class="front face">
+                        <img src="https://d3p0uzj6bsc0vo.cloudfront.net/img-sitev2/example-icon1.png" width="67" height="67" alt="image description">
+                        <span class="title">Web Design</span>
+                    </div>
+                    <div class="back face">
+                        <strong class="heading">WHAT FOR:</strong>
+                        <p>Creating a website from brainstorm to Launch. All aspects are covered.</p>
+                        <strong class="heading">FOR WHO:</strong>
+                        <p>Web developers, web designers, design studios, marketing agencies.</p>
+                    </div>
+                </a>
+            </li>
+<li>
+                <a href="/template-example/construction/" class="face-holder">
+                    <div class="front face">
+                        <img src="https://d3p0uzj6bsc0vo.cloudfront.net/img-sitev2/example-icon2.png" width="67" height="67" alt="image description">
+                        <span class="title">Construction</span>
+                    </div>
+                    <div class="back face">
+                        <strong class="heading">WHAT FOR:</strong>
+                        <p>An example on how to use Tom's Planner in construction projects.</p>
+                        <strong class="heading">FOR WHO:</strong>
+                        <p>Contractors, home owners, building companies, government agencies.</p>
+                    </div>
+                </a>
+            </li>
+<li class="even">
+                <a href="/template-example/wedding/" class="face-holder">
+                    <div class="front face">
+                        <img src="https://d3p0uzj6bsc0vo.cloudfront.net/img-sitev2/example-icon3.png" width="67" height="67" alt="image description">
+                        <span class="title">Weddings</span>
+                    </div>
+                    <div class="back face">
+                        <strong class="heading">WHAT FOR:</strong>
+                        <p>The year leading up to the wedding, two months leading up to the big day and the big day itself. </p>
+                        <strong class="heading">FOR WHO:</strong>
+                        <p>Brides and grooms or wedding planners.  </p>
+                    </div>
+                </a>
+            </li>
+<li>
+                <a href="/template-example/resources/" class="face-holder">
+                    <div class="front face">
+                        <img src="https://d3p0uzj6bsc0vo.cloudfront.net/img-sitev2/example-icon4.png" width="67" height="67" alt="image description">
+                        <span class="title">Resources</span>
+                    </div>
+                    <div class="back face">
+                        <strong class="heading">WHAT FOR:</strong>
+                        <p>Schedule all your resources: personel, equipment, employees, team members etc..</p>
+                        <strong class="heading">FOR WHO:</strong>
+                        <p>Employers, rental agencies, project teams, employment agencies etc.</p>
+                    </div>
+                </a>
+            </li>
+<li class="even">
+                <a href="/template-example/research/" class="face-holder">
+                    <div class="front face">
+                        <img src="https://d3p0uzj6bsc0vo.cloudfront.net/img-sitev2/example-icon5.png" width="67" height="67" alt="image description">
+                        <span class="title">Dissertations</span>
+                    </div>
+                    <div class="back face">
+                        <strong class="heading">WHAT FOR:</strong>
+                        <p>Research projects, dissertation papers, theses or graduation.</p>
+                        <strong class="heading">FOR WHO:</strong>
+                        <p>Researchers, students and scientists.</p>
+                    </div>
+                </a>
+            </li>
+<li>
+                <a href="/template-example/holidayseason/" class="face-holder">
+                    <div class="front face">
+                        <img src="https://d3p0uzj6bsc0vo.cloudfront.net/img-sitev2/example-icon6.png" width="67" height="67" alt="image description">
+                        <span class="title">Holiday Season</span>
+                    </div>
+                    <div class="back face">
+                        <strong class="heading">WHAT FOR:</strong>
+                        <p>Plan Thanks Giving, Halloween and Christmas ahead. Avoid chaos.</p>
+                        <strong class="heading">FOR WHO:</strong>
+                        <p>Families. Big or small.</p>
+                    </div>
+                </a>
+            </li>
+<li class="even">
+                <a href="/template-example/conference/" class="face-holder">
+                    <div class="front face">
+                        <img src="https://d3p0uzj6bsc0vo.cloudfront.net/img-sitev2/example-icon7.png" width="67" height="67" alt="image description">
+                        <span class="title">Conference</span>
+                    </div>
+                    <div class="back face">
+                        <strong class="heading">WHAT FOR:</strong>
+                        <p>Conferences, events, conventions </p>
+                        <strong class="heading">FOR WHO:</strong>
+                        <p>Professional and casual event and conference planners.</p>
+                    </div>
+                </a>
+            </li>
+<li class="">
+                <a href="/template-example/vacationrentals/" class="face-holder">
+                    <div class="front face">
+                        <img src="https://d3p0uzj6bsc0vo.cloudfront.net/img-sitev2/example-icon8.png" width="67" height="67" alt="image description">
+                        <span class="title">Rentals</span>
+                    </div>
+                    <div class="back face">
+                        <strong class="heading">WHAT FOR:</strong>
+                        <p>Keep track of the occupation of your vacation rentals</p>
+                        <strong class="heading">FOR WHO:</strong>
+                        <p>Campground, resort, holiday park or hotels</p>
+                    </div>
+                </a>
+            </li>
+<li class="even">
+                <a href="/template-example/businessdevelopment/" class="face-holder">
+                    <div class="front face">
+                        <img src="https://d3p0uzj6bsc0vo.cloudfront.net/img-sitev2/example-icon9.png" width="67" height="67" alt="image description">
+                        <span class="title">New business</span>
+                    </div>
+                    <div class="back face">
+                        <strong class="heading">WHAT FOR:</strong>
+                        <p>Start a new business from scratch. All the steps involved in setting up a new company.</p>
+                        <strong class="heading">FOR WHO:</strong>
+                        <p>Entrepreneurs and everyone else with a good business idea.</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
